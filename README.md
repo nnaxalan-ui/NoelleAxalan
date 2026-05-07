@@ -10,10 +10,10 @@ This project investigates the relationship between psychological stressors and a
 The analysis was performed in Google BigQuery using a relational schema consisting of two primary datasets:
 
 student_performance_finalscore: Contains outcome-based data including final exam scores and GPA.
-<img width="396" height="832" alt="student_performance (1)" src="https://github.com/user-attachments/assets/06e1e167-f0b9-461a-b60b-4c2ba7b9e12c" />
+<img width="398" height="822" alt="student_performance (4)" src="https://github.com/user-attachments/assets/0fe2b4af-4fd2-4fb0-a08b-2cc26932f6a6" />
 
 student_performance: 
-<img width="324" height="828" alt="student_performance" src="https://github.com/user-attachments/assets/8eb0fa05-0fab-4032-aae8-e052ef25fbff" />
+<img width="400" height="825" alt="student_performance (5)" src="https://github.com/user-attachments/assets/6947a4cb-3875-4739-b020-b8670aa67f43" />
 
 Key Technical Operation: Tables were joined via a `Student_ID` key. 
 
@@ -56,3 +56,36 @@ Lifestyle Safeguards: While sleep is generally a stabilizer, the data reveals a 
   - Expand tutoring access. With tutored students showing a 38.5% higher average score and a 29% reduction in grade volatility, tutoring should be positioned as both an academic elevator and an emotional stabilizer that provides a consistent performance "floor".
 
   - Implement early-warning systems to identify "At Risk" behaviors before students resort to the sleep depravation and cramming. While unsustainable sleep deprivation (see in the "Poorly Rested" group) yields high scores in the short term, the goal is to shift the high-anxiety "Moderately Rested" group toward healthy "Well Rested" habits, which correlates with a 21% score lift and 22% lower anxiety.
+
+
+
+## PROJECT TWO: DML and DDL SYNTAX PRACTICE - BUILDING A RELATIONAL DATABASE
+
+## Project Overview
+This project serves as a comprehensive technical demonstration of Data Definition Language (DDL) and Data Manipulation Language (DML) within a Google BigQuery environment. I architected a relational database from scratch, simulating an e-commerce ecosystem with seven interconnected tables to practice schema enforcement, data integrity, and complex table relationships.
+
+## Technical Skills Demonstrated
+  - Schema Design: Creating a normalized relational structure with Primary and Foreign Key constraints.
+
+  - Data Definition (DDL): Utilizing CREATE, ALTER, and DROP to manage table structures and data types.
+
+  - Data Manipulation (DML): Executing INSERT, UPDATE, and DELETE operations to maintain a dynamic dataset.
+
+  - Database Constraints: Implementing NOT ENFORCED keys (standard for BigQuery) to document logical relationships between entities.
+
+## Database Schema
+The database consists of the following seven entities, designed to simulate a real-world retail environment:
+<img width="754" height="390" alt="student_performance (2)" src="https://github.com/user-attachments/assets/ad6d05e9-7baa-4a99-97b4-e969b0a7f465" />
+
+## Key Project Highlights
+Structural Evolution: Rather than static creation, I practiced evolving the schema as business needs change
+  - Dynamic Column Addition: Used ALTER TABLE to add quantity to the OrderItems table and payment_method to the Payments table after initial creation.
+  - Data Integrity: Implemented PRIMARY KEY and FOREIGN KEY references to map the logical flow from Users $\rightarrow$ Orders $\rightarrow$ OrderItems.
+Precise Data Maintenance: I performed targeted updates to simulate real-world data maintenance tasks:
+  - Customer Updates: Updated user contact information (e.g., email corrections) using specific WHERE clause filtering.
+  - Price Management: Modified retail pricing for specific inventory items (UPDATE) to reflect market changes.
+  - Record Sanitization: Utilized DELETE to remove erroneous transaction entries while maintaining referential integrity.
+  - 
+## Project Conclusion
+This practice project established the technical rigor required to manage large-scale datasets. By manually constructing these relationships and manipulating the data within them, I developed a deep understanding of how backend data structures support frontend business analytics and reporting.
+
