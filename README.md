@@ -3,10 +3,12 @@ Noelle Axalan data analytics project portfolio
 
 ## PROJECT ONE - Analysis of Student Success Data
 
-## Background and Overview
+**Background and Overview**
+
 This project investigates the relationship between psychological stressors and academic outcomes among university students. Using SQL to merge and analyze disparate datasets, the study aims to identify at-risk student populations and evaluate the effectiveness of institutional support systems. 
 
-## Data Structure Overview
+**Data Structure Overview**
+
 The analysis was performed in Google BigQuery using a relational schema consisting of two primary datasets:
 
 student_performance_finalscore: Contains outcome-based data including final exam scores and GPA.
@@ -17,7 +19,8 @@ student_performance:
 
 Key Technical Operation: Tables were joined via a `Student_ID` key. 
 
-## Executive Summary
+**Executive Summary**
+
 The data reveals that academic success is a multi-variable equation where both psychological health and support systems are as predictive as students' natural academic aptitude. This project identifies 'Threshold Anxiety' at the C/D GPA border as a primary predictor of academic failure and utilized CTE-driven intervention analysis to evaluate institutional safeguards to propose targeted, data-driven support strategies.
 
   - A moderate negative correlation ($r = -0.49$) exists between exam anxiety and final scores.
@@ -26,7 +29,8 @@ The data reveals that academic success is a multi-variable equation where both p
 
   - Students who received formal support achieved an average final score of 78.8, representing a 38.5% increase over the non-tutored group average of 56.9.
 
-## Insights Deep Dive
+**Insights Deep Dive**
+
 The C/D Threshold Spike: Data reveals a significant non-linear spike in stress as students approach the passing threshold. Students in the "Aspiring D" category (those working to move from failing to a 1.7 GPA) reported anxiety levels 31.9% higher than those in the "Safe" category.
 
   - Insight: The psychological pressure is highest at the point of "Academic Survival." Interestingly, anxiety levels actually     decrease once students move into "At Risk" or "Aspiring B" tiers, suggesting that once a basic level of security is reached, the intense "survival stress" begins to subside. 
@@ -50,7 +54,8 @@ Lifestyle Safeguards: While sleep is generally a stabilizer, the data reveals a 
     
   - Conclusion: For a small number of students, extreme sleep deprivation is a deliberate (if unsustainable) tactical choice for performance. However, for the majority, falling into "Moderate" sleep deprivation ($7+$ students) results in the worst possible outcome: high anxiety paired with low retention.
 
-## Recommendations
+**Recommendations**
+
   - Allocate immediate counseling and coaching resources to students in the 1.5-1.7 GPA range (Aspiring D/At Risk C). Data indicates this cohort faces a 31.9% spike in anxiety compared to "Safe" students, suggesting that the psychological pressure of the passing threshold is a primary barrier to their academic performance.
 
   - Expand tutoring access. With tutored students showing a 38.5% higher average score and a 29% reduction in grade volatility, tutoring should be positioned as both an academic elevator and an emotional stabilizer that provides a consistent performance "floor".
