@@ -3,23 +3,22 @@ Noelle Axalan data analytics project portfolio
 
 ## PROJECT ONE - Analysis of Student Success Data
 
-**Background and Overview**
+**BACKGROUND AND OVERVIEW**
 
 This project investigates the relationship between psychological stressors and academic outcomes among university students. Using SQL to merge and analyze disparate datasets, the study aims to identify at-risk student populations and evaluate the effectiveness of institutional support systems. 
 
-**Data Structure Overview**
+**DATA STRUCTURE AND OVERVIEW**
 
 The analysis was performed in Google BigQuery using a relational schema consisting of two primary datasets:
 
-student_performance_finalscore: Contains outcome-based data including final exam scores and GPA.
 <img width="398" height="822" alt="student_performance (4)" src="https://github.com/user-attachments/assets/0fe2b4af-4fd2-4fb0-a08b-2cc26932f6a6" />
 
-student_performance: 
 <img width="400" height="825" alt="student_performance (5)" src="https://github.com/user-attachments/assets/6947a4cb-3875-4739-b020-b8670aa67f43" />
+
 
 Key Technical Operation: Tables were joined via a `Student_ID` key. 
 
-**Executive Summary**
+**EXECUTIVE SUMMARY**
 
 The data reveals that academic success is a multi-variable equation where both psychological health and support systems are as predictive as students' natural academic aptitude. This project identifies 'Threshold Anxiety' at the C/D GPA border as a primary predictor of academic failure and utilized CTE-driven intervention analysis to evaluate institutional safeguards to propose targeted, data-driven support strategies.
 
@@ -29,7 +28,7 @@ The data reveals that academic success is a multi-variable equation where both p
 
   - Students who received formal support achieved an average final score of 78.8, representing a 38.5% increase over the non-tutored group average of 56.9.
 
-**Insights Deep Dive**
+**INSIGHTS DEEP DIVE**
 
 The C/D Threshold Spike: Data reveals a significant non-linear spike in stress as students approach the passing threshold. Students in the "Aspiring D" category (those working to move from failing to a 1.7 GPA) reported anxiety levels 31.9% higher than those in the "Safe" category.
 
@@ -54,7 +53,7 @@ Lifestyle Safeguards: While sleep is generally a stabilizer, the data reveals a 
     
   - Conclusion: For a small number of students, extreme sleep deprivation is a deliberate (if unsustainable) tactical choice for performance. However, for the majority, falling into "Moderate" sleep deprivation ($7+$ students) results in the worst possible outcome: high anxiety paired with low retention.
 
-**Recommendations**
+**RECOMMENDATIONS**
 
   - Allocate immediate counseling and coaching resources to students in the 1.5-1.7 GPA range (Aspiring D/At Risk C). Data indicates this cohort faces a 31.9% spike in anxiety compared to "Safe" students, suggesting that the psychological pressure of the passing threshold is a primary barrier to their academic performance.
 
@@ -66,10 +65,12 @@ Lifestyle Safeguards: While sleep is generally a stabilizer, the data reveals a 
 
 ## PROJECT TWO: DML and DDL SYNTAX PRACTICE - BUILDING A RELATIONAL DATABASE
 
-## Project Overview
+**PROJECT OVERVIEW**
+
 This project serves as a comprehensive technical demonstration of Data Definition Language (DDL) and Data Manipulation Language (DML) within a Google BigQuery environment. I architected a relational database from scratch, simulating an e-commerce ecosystem with seven interconnected tables to practice schema enforcement, data integrity, and complex table relationships.
 
-## Technical Skills Demonstrated
+**TECHNICAL SKILLS DEMONSTRATED**
+
   - Schema Design: Creating a normalized relational structure with Primary and Foreign Key constraints.
 
   - Data Definition (DDL): Utilizing CREATE, ALTER, and DROP to manage table structures and data types.
@@ -78,11 +79,16 @@ This project serves as a comprehensive technical demonstration of Data Definitio
 
   - Database Constraints: Implementing NOT ENFORCED keys (standard for BigQuery) to document logical relationships between entities.
 
-## Database Schema
+**DATABASE SCHEMA**
+
 The database consists of the following seven entities, designed to simulate a real-world retail environment:
+
 <img width="754" height="390" alt="student_performance (2)" src="https://github.com/user-attachments/assets/ad6d05e9-7baa-4a99-97b4-e969b0a7f465" />
 
-## Key Project Highlights
+
+
+**KEY PROJECT HIGHLIGHTS**
+
 Structural Evolution: Rather than static creation, I practiced evolving the schema as business needs change
   - Dynamic Column Addition: Used ALTER TABLE to add quantity to the OrderItems table and payment_method to the Payments table after initial creation.
   - Data Integrity: Implemented PRIMARY KEY and FOREIGN KEY references to map the logical flow from Users $\rightarrow$ Orders $\rightarrow$ OrderItems.
@@ -91,6 +97,7 @@ Precise Data Maintenance: I performed targeted updates to simulate real-world da
   - Price Management: Modified retail pricing for specific inventory items (UPDATE) to reflect market changes.
   - Record Sanitization: Utilized DELETE to remove erroneous transaction entries while maintaining referential integrity.
   - 
-## Project Conclusion
+**PROJECT CONCLUSION**
+
 This practice project established the technical rigor required to manage large-scale datasets. By manually constructing these relationships and manipulating the data within them, I developed a deep understanding of how backend data structures support frontend business analytics and reporting.
 
