@@ -18,7 +18,7 @@ student_performance:
 Key Technical Operation: Tables were joined via a `Student_ID` key. 
 
 ## Executive Summary
-The data reveals that academic success is a multi-variable equation where both psychological health and support systems are as predictive as students' natural academic aptitude. This project identifies a clear "Anxiety-Performance Inverse" and highlights specific points of intervention for institutional success.
+The data reveals that academic success is a multi-variable equation where both psychological health and support systems are as predictive as students' natural academic aptitude. This project identifies 'Threshold Anxiety' at the C/D GPA border as a primary predictor of academic failure and utilized CTE-driven intervention analysis to evaluate institutional safeguards to propose targeted, data-driven support strategies.
 
   - A moderate negative correlation ($r = -0.49$) exists between exam anxiety and final scores.
 
