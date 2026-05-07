@@ -1,7 +1,8 @@
-# NoelleAxalan
+# Noelle Axalan
 Noelle Axalan data analytics project portfolio
 
-Student Stress and Academic Performance Analysis
+##  Data Analysis: Student Success
+
 ## Background and Overview
 This project investigates the relationship between psychological stressors and academic outcomes among university students. Using SQL to merge and analyze disparate datasets, the study aims to identify at-risk student populations and evaluate the effectiveness of institutional support systems. 
 
